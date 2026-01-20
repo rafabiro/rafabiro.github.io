@@ -171,12 +171,26 @@
   border-radius: 14px;
   margin-top: 30px;
 }
-    .green-title {
-    color: #2e7d32; /* hijau header */
-}
-.review p {
-    color: #000;       /* isi tetap hitam */
+    <style>
+/* Judul hijau seperti header */
+.kenapa-rafabiro h2,
+.review-pelanggan h2 {
+    color: #0f3d2e; /* hijau header */
     margin-bottom: 10px;
+}
+
+/* Isi tetap hitam */
+.kenapa-rafabiro p,
+.review-pelanggan p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* Optional: beri jarak antar section */
+.kenapa-rafabiro,
+.review-pelanggan {
+    margin-top: 30px;
 }
   </style>
 </head>
@@ -212,8 +226,9 @@
     </ul>
   </section>
 
-  section id="kenapa-rafabiro">
-  <h2 class="green-title">Kenapa RafaBiro?</h2>
+  <!-- Kenapa RafaBiro Section -->
+<section class="kenapa-rafabiro">
+  <h2>Kenapa RafaBiro?</h2>
   <ul>
     <li>Pengalaman tim lebih dari <strong>13 tahun</strong></li>
     <li>Proses transparan & legal</li>
@@ -234,9 +249,9 @@
      📍 Lihat Lokasi di Google Maps
   </a>
 
-  <!-- Review Section -->
-<section id="review-pelanggan">
-  <h2 class="green-title">Review Pelanggan</h2>
+  <!-- Review Pelanggan Section -->
+<section class="review-pelanggan">
+  <h2>Review Pelanggan</h2>
   <div class="review-slider">
     <div class="review">
       <p>"Terbaik di bintara, jasanya murah, detail dijelasin dan bisa bayar pas sudah jadi"</p>
