@@ -71,12 +71,14 @@
       margin-top: 35px;
     }
 
-    section h3 {
+    section h3,
+    .kenapa-rafabiro h2,
+    .review-pelanggan h2,
+    .lokasi h2 {
       color: #0f3d2e;
-      border-left: 5px solid #0f3d2e;
-      padding-left: 12px;
-      font-size: 20px;
-      margin-bottom: 15px;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
     ul {
@@ -85,7 +87,9 @@
     }
 
     ul li {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      color: #333;
+      line-height: 1.6;
     }
 
     .kenapa-rafabiro {
@@ -95,27 +99,13 @@
       margin-top: 30px;
     }
 
-    .kenapa-rafabiro h2 {
-      color: #0f3d2e; /* hijau header */
-      margin-bottom: 10px;
-    }
-
-    .kenapa-rafabiro p,
-    .kenapa-rafabiro li {
-      color: #333;
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-
-    .review-pelanggan h2 {
-      color: #0f3d2e; /* hijau header */
-      margin-bottom: 10px;
-    }
-
-    .review-pelanggan p {
-      color: #333;
-      line-height: 1.6;
-      margin-bottom: 12px;
+    .review-pelanggan .review {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 0 0 300px;
+      margin-right: 15px;
     }
 
     .review-slider {
@@ -129,23 +119,32 @@
     .review-slider::-webkit-scrollbar-thumb { background: #2e7d32; border-radius: 4px; }
     .review-slider::-webkit-scrollbar-track { background: #f1f1f1; }
 
-    .review {
-      flex: 0 0 300px;
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    .review p {
+      font-size: 0.95em;
+      margin-bottom: 10px;
+      color: #333;
     }
 
-    .review p { font-size: 0.95em; margin-bottom: 10px; }
     .review .stars {
       color: #ffc107;
       font-size: 1.1em;
       margin-bottom: 8px;
       transition: transform 0.3s;
     }
+
     .review .stars:hover { transform: scale(1.2); }
-    .review strong { font-size: 0.85em; color: #555; }
+
+    .review strong {
+      font-size: 0.85em;
+      color: #555;
+    }
+
+    .lokasi p,
+    .lokasi a {
+      color: #0f3d2e;
+      font-size: 15px;
+      text-decoration: none;
+    }
 
     .cta {
       margin-top: 40px;
@@ -163,29 +162,10 @@
       font-weight: bold;
     }
 
-    .cta a:hover { background: #1ebe5d; }
-
-    .links {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 15px;
+    .cta a:hover {
+      background: #1ebe5d;
     }
 
-    .links a {
-      margin: 0 10px;
-      color: #0f3d2e;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      margin-top: 45px;
-    }
-
-    /* Floating WhatsApp */
     .floating-wa-text {
       position: fixed;
       bottom: 25px;
@@ -215,21 +195,17 @@
       display: block;
     }
 
-    .section-title {
-      font-size: 22px;
-      font-weight: 700;
-      color: #1b5e20;
-      border-left: 6px solid #1b5e20;
-      padding-left: 12px;
-      margin-bottom: 12px;
+    .links {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 15px;
     }
 
-    .map-link {
-      display: inline-block;
-      margin-top: 8px;
-      font-weight: 600;
-      color: #1b5e20;
-      text-decoration: none;
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      margin-top: 45px;
     }
   </style>
 </head>
@@ -237,7 +213,7 @@
 
 <header>
   <h1>RafaBiro</h1>
-  <p>Biro Jasa Layanan Pajak Kendaraan</p>
+  <p>Layanan Persiapan Pajak Kendaraan</p>
   <p>Aman & Hemat Waktu</p>
 </header>
 
@@ -248,8 +224,9 @@
     <h2>Sudah Ribuan Dokumen Kami Bantu Bereskan</h2>
     <p>
       RafaBiro membantu pengurusan administrasi kendaraan dengan proses yang jelas,
-      aman, dan terpercaya. Hadir untuk Anda yang ingin urusan kendaraan selesai
-      tanpa ribet, tanpa antri di samsat dan tanpa buang waktu.
+      aman, dan terpercaya.
+      Hadir untuk Anda yang ingin urusan kendaraan selesai
+      tanpa ribet dan tanpa buang waktu.
     </p>
   </div>
 
@@ -273,15 +250,10 @@
     </ul>
   </section>
 
-  <section class="section">
-    <h2 class="section-title">Lokasi Kantor RafaBiro</h2>
-    <p>
-      Pondok Cipta - Griya Bintara Indah<br>
-      Blok AA 3 No.14 Bintara, Bekasi Barat
-    </p>
-    <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank" class="map-link">
-      📍 Lihat Lokasi di Google Maps
-    </a>
+  <section class="lokasi">
+    <h2>Lokasi Kantor RafaBiro</h2>
+    <p>Pondok Cipta - Griya Bintara Indah<br>Blok AA 3 No.14 Bintara, Bekasi Barat</p>
+    <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank">📍 Lihat Lokasi di Google Maps</a>
   </section>
 
   <section class="review-pelanggan">
@@ -298,27 +270,27 @@
         <strong>- Sudarman, Jakarta</strong>
       </div>
       <div class="review">
-        <p>"Mutasi & baliknama selalu jadi andalan di showroom ku, mantap Mas Aan!"</p>
+        <p>"Mutasi & baliknama selalu jadi andalan di showroom ku, mantap mas aan!"</p>
         <div class="stars">★★★★★</div>
         <strong>- Riska Oktaviani, Tangerang</strong>
       </div>
     </div>
   </section>
 
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/6285714685247" class="floating-wa-text">
+    <img src="wa.png" alt="WhatsApp" class="wa-icon">
+    <span>Konsultasi via WhatsApp</span>
+  </a>
+
   <div class="links">
     <a href="artikel.html">📘 Baca Artikel & Panduan Lengkap</a>
   </div>
 
-</div>
+  <div class="footer">
+    © RafaBiro – Biro Jasa Pajak Kendaraan | Bekasi Barat – Jabodetabek
+  </div>
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/6285714685247" class="floating-wa-text">
-  <img src="wa.png" alt="WhatsApp" class="wa-icon">
-  <span>Konsultasi via WhatsApp</span>
-</a>
-
-<div class="footer">
-  © RafaBiro – Biro Jasa Pajak Kendaraan | Bekasi Barat – Jabodetabek
 </div>
 
 </body>
