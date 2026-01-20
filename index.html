@@ -227,6 +227,60 @@
      📍 Lihat Lokasi di Google Maps
   </a>
 
+  <!-- Review Section -->
+<section id="reviews">
+  <h2>Review Pelanggan</h2>
+  <div class="review-slider">
+    <div class="review">
+      <p>"Terbaik di bintara, jasanya murah, detail dijelasin dan bisa bayar pas sudah jadi"</p>
+      <div class="stars">★★★★★</div>
+      <strong>- Muhammad Raihan, Bekasi</strong>
+    </div>
+    <div class="review">
+      <p>"Blokir kendaraan dan ETLE urusannya jadi mudah, recommended!"</p>
+      <div class="stars">★★★★☆</div>
+      <strong>- Sudarman, Jakarta</strong>
+    </div>
+    <div class="review">
+      <p>"Mutasi & baliknama selalu jadi andalan di showroom ku, mantap mas aan!"</p>
+      <div class="stars">★★★★★</div>
+      <strong>- Riska oktaviani, Tangerang</strong>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Review Slider */
+#reviews { margin-top:40px; }
+.review-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.review-slider::-webkit-scrollbar { height: 8px; }
+.review-slider::-webkit-scrollbar-thumb { background: #2e7d32; border-radius: 4px; }
+.review-slider::-webkit-scrollbar-track { background: #f1f1f1; }
+
+.review {
+  flex: 0 0 300px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.review p { font-size: 0.95em; margin-bottom: 10px; }
+.review .stars {
+  color: #ffc107;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  transition: transform 0.3s;
+}
+.review .stars:hover { transform: scale(1.2); }
+.review strong { font-size: 0.85em; color: #555; }
+</style>
+
   <!-- Floating WhatsApp dengan teks -->
 <a href="https://wa.me/6285714685247" class="floating-wa-text">
   <img src="wa.png" alt="WhatsApp" class="wa-icon">
@@ -265,7 +319,8 @@
 </style>
 
   <div class="links">
-    <a href="artikel.html">📘 Baca Artikel & Panduan Lengkap</a>
+    <a href="artikel.html">
+  📘 Baca Artikel & Panduan Lengkap</a>
     
 
     
