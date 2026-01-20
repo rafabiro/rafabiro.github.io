@@ -2,173 +2,204 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <title>Artikel RafaBiro – Persyaratan & Layanan Pajak Kendaraan</title>
+  <meta name="description" content="Artikel lengkap RafaBiro tentang layanan biro jasa pajak kendaraan: perpanjang STNK, STNK hilang, balik nama, mutasi, SIM, ETLE, dan blokir kendaraan.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RafaBiro – Jasa Perpanjang STNK, Mutasi, Balik Nama, SIM & STNK Hilang</title>
-  <meta name="description" content="RafaBiro adalah biro jasa resmi pengurusan pajak kendaraan, perpanjangan STNK, balik nama, mutasi, blokir kendaraan, ETLE, SIM, dan STNK hilang untuk wilayah Sejabodetabek. Alamat kantor: Griya Bintara Indah Blok AA 3 No.14, Bekasi Barat.">
-  <meta name="keywords" content="biro jasa pajak kendaraan, perpanjang STNK, balik nama kendaraan, mutasi kendaraan, blokir kendaraan, etle, sim, stnk hilang, nomor cantik, Jabodetabek">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
       line-height: 1.6;
     }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
     header {
-      background-color: #2e7d32;
-      color: white;
+      background: #0f3d2e;
+      color: #fff;
+      padding: 28px 20px;
       text-align: center;
-      padding: 20px;
     }
 
     header h1 {
       margin: 0;
       font-size: 32px;
+      letter-spacing: 0.5px;
     }
 
-    .badge {
-      background: #ffc107;
-      color: #000;
-      display: inline-block;
-      padding: 5px 12px;
-      margin-top: 10px;
-      border-radius: 5px;
-      font-weight: bold;
+    header p {
+      margin: 8px 0 0;
+      font-size: 15px;
+      opacity: 0.95;
     }
 
-    section {
-      margin-top: 25px;
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 25px 20px 40px;
+      background: #ffffff;
     }
 
-    section h2 {
-      color: #2e7d32;
-      border-left: 5px solid #2e7d32;
-      padding-left: 10px;
+    h2, h3 {
+      color: #0f3d2e; /* hijau header */
+      margin-bottom: 12px;
     }
 
-    p {
-      margin-bottom: 15px;
+    p, li {
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 12px;
     }
 
-    img {
+    ul {
+      padding-left: 20px;
+    }
+
+    .kenapa-rafabiro {
+      background: #f4f6f5;
+      padding: 20px;
+      border-radius: 14px;
+      margin-top: 30px;
+    }
+
+    .hero img {
       width: 100%;
-      max-width: 900px;
-      border-radius: 12px;
+      max-width: 380px;
+      border-radius: 14px;
+      margin-bottom: 18px;
       display: block;
-      margin: 20px auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    a.button {
+    .cta {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .cta a {
       display: inline-block;
-      background-color: #2e7d32;
+      background: #25d366;
       color: #fff;
-      padding: 12px 20px;
-      border-radius: 8px;
+      padding: 18px 26px;
+      border-radius: 10px;
       text-decoration: none;
-      margin-top: 15px;
+      font-size: 17px;
       font-weight: bold;
+      transition: all 0.3s ease;
     }
 
-    a.button:hover {
-      background-color: #1b5e20;
+    .cta a:hover {
+      background: #1ebe5d;
+    }
+
+    .map-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      color: #0f3d2e; /* hijau header */
+      text-decoration: none;
+    }
+
+    .map-link:hover {
+      text-decoration: underline;
     }
 
     .footer {
       text-align: center;
       font-size: 14px;
       color: #777;
-      margin-top: 40px;
-      padding-top: 15px;
-      border-top: 1px solid #2e7d32;
+      margin-top: 45px;
     }
+
+    /* Floating WhatsApp */
+    .floating-wa-text {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25d366;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      z-index: 9999;
+    }
+
+    .floating-wa-text:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .wa-icon {
+      width: 40px;
+      height: 40px;
+      display: block;
+    }
+
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>RafaBiro</h1>
-    <div class="badge">Biro Jasa Pajak Kendaraan</div>
-  </header>
+<header>
+  <h1>RafaBiro</h1>
+  <p>Layanan Persiapan Pajak Kendaraan</p>
+  <p>Aman & Hemat Waktu</p>
+</header>
 
-  <div class="container">
-    <!-- Foto Mas Aan -->
-    <img src="aan.jpg" alt="Mas Aan RafaBiro">
+<div class="container">
 
-    <!-- Perpanjangan STNK -->
-    <section>
-      <h2>Perpanjangan STNK</h2>
-      <p>
-        Layanan perpanjangan STNK tahunan dan 5 tahunan untuk semua kendaraan. 
-        Persyaratan lengkap: KTP pemilik, STNK lama, BPKB (untuk 5 tahunan), dan formulir perpanjangan resmi.
-      </p>
-    </section>
-
-    <!-- STNK Hilang -->
-    <section>
-      <h2>STNK Hilang</h2>
-      <p>
-        Layanan pengurusan STNK hilang. Persyaratan: KTP pemilik, fotokopi BPKB, surat kehilangan dari kepolisian, formulir resmi, dan dokumen pendukung lainnya.
-      </p>
-    </section>
-
-    <!-- Mutasi & Balik Nama -->
-    <section>
-      <h2>Mutasi & Balik Nama Kendaraan</h2>
-      <p>
-        Layanan mutasi kendaraan masuk/keluar dan balik nama. Persyaratan: KTP pemilik, STNK & BPKB lama, kwitansi jual beli, formulir resmi, serta surat kuasa jika diwakilkan.
-      </p>
-    </section>
-
-    <!-- Blokir Kendaraan & ETLE -->
-    <section>
-      <h2>Blokir Kendaraan & Penanganan ETLE</h2>
-      <p>
-        Layanan membuka blokir kendaraan dan menangani tilang ETLE. Persyaratan: STNK, KTP pemilik, dokumen tilang (ETLE), serta formulir terkait.
-      </p>
-    </section>
-
-    <!-- SIM & Nomer Cantik -->
-    <section>
-      <h2>Pengurusan SIM & Nomer Cantik</h2>
-      <p>
-        Layanan pengurusan SIM dan permohonan nomor cantik. Persyaratan: KTP, foto terbaru, formulir resmi, dan dokumen kendaraan untuk nomor cantik.
-      </p>
-    </section>
-
-    <!-- Alamat Kantor -->
-    <section>
-      <h2>Alamat Kantor</h2>
-      <p>
-        Griya Bintara Indah<br>
-        Blok AA 3 No.14<br>
-        Bekasi Barat – Jawa Barat
-      </p>
-    </section>
-
-    <!-- CTA Artikel -->
-    <a href="artikel.html" class="button">📘 Baca Artikel Edukasi Pajak Kendaraan</a>
-
-    <!-- Closing -->
-    <section>
-      <h2>Butuh Bantuan? 🎯</h2>
-      <p>
-        Semua urusan kendaraan Anda bisa dibantu oleh <strong>RafaBiro</strong>. Dari perpanjang STNK, mutasi, balik nama, SIM, hingga STNK hilang – kami proses cepat, aman, dan hemat waktu. Tinggal hubungi kami dan serahkan urusan kendaraan Anda!
-      </p>
-    </section>
-
-    <div class="footer">
-      © RafaBiro – Biro Jasa Pajak Kendaraan
-    </div>
+  <div class="hero">
+    <img src="kantor.jpg" alt="Kantor RafaBiro - Bekasi Barat">
+    <h2>Artikel Lengkap Layanan RafaBiro</h2>
+    <p>Pelajari persyaratan dan prosedur biro jasa pajak kendaraan untuk perpanjang STNK, STNK hilang, balik nama, mutasi, SIM, ETLE, dan blokir kendaraan.</p>
   </div>
+
+  <!-- Kenapa RafaBiro -->
+  <section class="kenapa-rafabiro">
+    <h2>Kenapa RafaBiro?</h2>
+    <ul>
+      <li>Pengalaman tim lebih dari <strong>13 tahun</strong></li>
+      <li>Proses transparan & legal</li>
+      <li>Aman, rapi, dan bisa dipantau</li>
+      <li>Konsultasi ramah dan solutif</li>
+    </ul>
+  </section>
+
+  <!-- Persyaratan -->
+  <section>
+    <h2>Persyaratan Layanan</h2>
+    <ul>
+      <li><strong>Perpanjang STNK:</strong> STNK asli, KTP asli pemilik, dan bukti bayar pajak sebelumnya.</li>
+      <li><strong>Balik Nama & Mutasi:</strong> STNK & BPKB asli, KTP asli, surat jual beli, dan fotokopi dokumen pendukung.</li>
+      <li><strong>STNK Hilang:</strong> Laporan kepolisian, fotokopi KTP pemilik, dan dokumen kendaraan jika ada.</li>
+      <li><strong>SIM, ETLE & Blokir:</strong> KTP asli, STNK/BPKB, dan dokumen terkait lainnya.</li>
+    </ul>
+  </section>
+
+  <!-- Lokasi Kantor -->
+  <section>
+    <h2>Lokasi Kantor RafaBiro</h2>
+    <p>Pondok Cipta - Griya Bintara Indah<br>Blok AA 3 No.14, Bintara, Bekasi Barat</p>
+    <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank" class="map-link">📍 Lihat Lokasi di Google Maps</a>
+  </section>
+
+  <div class="cta">
+    <a href="https://wa.me/6285714685247">
+      <img src="wa.png" alt="WhatsApp" class="wa-icon"> Konsultasi via WhatsApp
+    </a>
+  </div>
+
+  <div class="footer">
+    © RafaBiro – Biro Jasa Pajak Kendaraan | Bekasi Barat – Jabodetabek
+  </div>
+
+</div>
 </body>
 </html>
