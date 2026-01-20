@@ -4,134 +4,278 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>RafaBiro – Jasa Perpanjang STNK, Mutasi, Baliknama & SIM Sejabodetabek</title>
-  <meta name="description" content="RafaBiro adalah biro jasa resmi pengurusan pajak kendaraan, perpanjangan STNK, balik nama, mutasi, blokir kendaraan, ETLE, dan SIM untuk wilayah Jabodetabek. Alamat kantor: Griya Bintara Indah Blok AA 3 No.14, Bekasi Barat.">
-  <meta name="keywords" content="biro jasa pajak kendaraan, perpanjang STNK, balik nama kendaraan, mutasi kendaraan, blokir kendaraan, etle, sim jabodetabek">
+  <title>RafaBiro - Jasa Perpanjang STNK, Mutasi, Balik Nama | Bekasi</title>
 
-  <!-- Google Search Console -->
-  <meta name="google-site-verification" content="HlIM7_RtefGYhs4HrpUqlNB0aI4c6c_Hw0lYhrhE30U" />
+  <meta name="description" content="RafaBiro melayani perpanjang STNK, pajak kendaraan, mutasi, balik nama, dan STNK hilang. Berlokasi di Bintara Bekasi Barat, melayani Jabodetabek.">
+  <meta name="keywords" content="RafaBiro, jasa perpanjang STNK, biro jasa pajak kendaraan, mutasi kendaraan, balik nama, STNK hilang, Bekasi, Bintara, Jabodetabek">
+  <meta name="author" content="RafaBiro">
 
   <style>
     body {
-        font-family: Arial, sans-serif;
-        background-color: #fdf6f0;
-        color: #333;
-        line-height: 1.7;
-        margin: 20px;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333;
     }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* HEADER */
+    .hero {
+      background: #1e7f4f;
+      color: #fff;
+      padding: 60px 20px 80px;
+    }
+
+    .hero-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hero-text h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn-wa {
+      background: #fff;
+      color: #1e7f4f;
+    }
+
+    .btn-service {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .hero-img {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    /* SECTION */
+    section {
+      padding: 60px 20px;
+    }
+
     .container {
-        max-width: 900px;
-        margin: auto;
-        background: #ffffff;
-        padding: 25px;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 1100px;
+      margin: auto;
     }
-    header {
-        background-color: #2e7d32; /* Hijau header */
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-        border-radius: 12px 12px 0 0;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
     }
-    header h1 {
-        margin: 0;
-        font-size: 32px;
-        color: #ffffff; /* RafaBiro tetap putih */
+
+    /* LAYANAN */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
-    .badge {
-        background: #ffc107;
-        color: #000;
-        display: inline-block;
-        padding: 5px 12px;
-        margin-top: 10px;
-        border-radius: 5px;
-        font-weight: bold;
+
+    .service-box {
+      background: #f4f6f5;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
     }
-    h1, h2 { color: #2e7d32; }
-    h1 { font-size: 2em; margin-bottom: 10px; }
-    h2 { font-size: 1.3em; margin-bottom: 15px; border-left:5px solid #2e7d32; padding-left:10px; }
-    p { margin-bottom: 15px; }
-    ul { padding-left: 20px; margin-bottom: 20px; }
-    li { margin-bottom: 8px; }
-    img {
-        width: 100%;
-        max-width: 900px;
-        display: block;
-        margin: 15px auto;
-        border-radius: 12px;
+
+    /* KEUNGGULAN */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: center;
     }
-    a.button, a.button-wa {
-        display: inline-block;
-        background-color: #2e7d32;
-        color: #fff;
-        padding: 12px 20px;
-        text-decoration: none;
-        border-radius: 8px;
-        margin-top: 15px;
+
+    .feature-box {
+      padding: 20px;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    a.button:hover, a.button-wa:hover { background-color: #1b5e20; }
-    .footer {
-        text-align: center;
-        font-size: 14px;
-        color: #777;
-        margin-top: 30px;
+
+    /* ALUR */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .step-box {
+      padding: 20px;
+      background: #f4f6f5;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    /* ARTIKEL */
+    .article-preview {
+      text-align: center;
+    }
+
+    .article-preview a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background: #1e7f4f;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* LOKASI */
+    .location {
+      text-align: center;
+    }
+
+    .location a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background: #1e7f4f;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #1e7f4f;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer a {
+      color: #fff;
+      font-weight: bold;
     }
   </style>
-
 </head>
+
 <body>
 
-<header>
-  <h1>RafaBiro</h1>
-  <div class="badge">Biro Jasa Pajak Kendaraan</div>
-</header>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>RafaBiro</h1>
+        <p>Biro Jasa Pengurusan Kendaraan & Pajak<br>Aman • Legal • Hemat Waktu</p>
 
-<div class="container">
+        <div class="hero-buttons">
+          <a href="https://wa.me/6285714685247" class="btn-wa">WhatsApp Sekarang</a>
+          <a href="#layanan" class="btn-service">Lihat Layanan</a>
+        </div>
+      </div>
 
-<section>
-  <h2>Layanan Kami</h2>
-  <ul>
-    <li>Perpanjangan STNK Tahunan & 5 Tahunan</li>
-    <li>Balik Nama Kendaraan</li>
-    <li>Mutasi Kendaraan</li>
-    <li>Blokir Kendaraan</li>
-    <li>Penanganan ETLE</li>
-    <li>Pengurusan SIM</li>
-  </ul>
-</section>
+      <div class="hero-img">
+        <img src="aan.jpg" alt="RafaBiro Bekasi">
+      </div>
+    </div>
+  </div>
 
-<section>
-  <h2>Wilayah Layanan</h2>
-  <p>Melayani biro jasa kendaraan untuk wilayah <strong>Jabodetabek</strong> dan sekitarnya.</p>
-</section>
+  <!-- LAYANAN -->
+  <section id="layanan">
+    <div class="container">
+      <h2>Layanan RafaBiro</h2>
 
-<section>
-  <h2>Alamat Kantor</h2>
-  <p>
-    Griya Bintara Indah<br>
-    Blok AA 3 No.14 Bintara, Bekasi Barat – Jawa Barat
-  <p>
-  <a class="button-map" href="https://maps.app.goo.gl/iTWbUqRRsXToFeFN9" target="_blank">
-    Lihat di Google Maps
-  </a>
-</p>
-</section>
+      <div class="services">
+        <div class="service-box">Perpanjang STNK</div>
+        <div class="service-box">Pajak Tahunan & 5 Tahunan</div>
+        <div class="service-box">Mutasi Kendaraan</div>
+        <div class="service-box">Balik Nama</div>
+        <div class="service-box">STNK Hilang</div>
+        <div class="service-box">Kendaraan Pribadi & PT</div>
+      </div>
+    </div>
+  </section>
 
-<!-- Foto kantor di root repository -->
-<img src="kantor.jpg" alt="Kantor RafaBiro">
+  <!-- KEUNGGULAN -->
+  <section>
+    <div class="container">
+      <h2>Kenapa RafaBiro?</h2>
 
-<a class="button-wa" href="https://wa.me/6285714685247">💬 Konsultasi via WhatsApp</a>
+      <div class="features">
+        <div class="feature-box">Pengalaman urus langsung Samsat</div>
+        <div class="feature-box">Proses jelas & transparan</div>
+        <div class="feature-box">Bisa konsultasi dulu</div>
+        <div class="feature-box">Cocok untuk yang sibuk</div>
+      </div>
+    </div>
+  </section>
 
-<p style="margin-top:20px;">
-  <a href="artikel.html" class="button">📘 Baca Artikel Edukasi Pajak Kendaraan</a>
-</p>
+  <!-- ALUR -->
+  <section>
+    <div class="container">
+      <h2>Alur Singkat</h2>
 
-<div class="footer">
-  © RafaBiro – Biro Jasa Pajak Kendaraan
-</div>
+      <div class="steps">
+        <div class="step-box">1. Konsultasi</div>
+        <div class="step-box">2. Kirim Data</div>
+        <div class="step-box">3. Proses Berjalan</div>
+        <div class="step-box">4. Dokumen Selesai</div>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- ARTIKEL -->
+  <section>
+    <div class="container article-preview">
+      <h2>Artikel & Edukasi</h2>
+      <p>Informasi lengkap seputar pajak dan pengurusan kendaraan.</p>
+      <a href="artikel.html">Baca Artikel</a>
+    </div>
+  </section>
+
+  <!-- LOKASI -->
+  <section>
+    <div class="container location">
+      <h2>Lokasi RafaBiro</h2>
+      <p>Bintara, Bekasi Barat<br>Melayani Jabodetabek</p>
+      <a href="https://maps.app.goo.gl/mdbHwyPRLAsMgYcn8">Lihat di Google Maps</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Butuh bantuan urusan kendaraan?</p>
+    <p><a href="https://wa.me/6285714685247">Hubungi RafaBiro via WhatsApp</a></p>
+  </footer>
 
 </body>
 </html>
