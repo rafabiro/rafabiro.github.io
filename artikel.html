@@ -14,16 +14,24 @@
       line-height: 1.7;
     }
 
-    header {
+    /* HEADER */
+    header.main-header {
       background: #0f3d2e;
       color: #fff;
-      padding: 24px 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 26px;
+    header.main-header img {
+      height: 50px;
+    }
+
+    header.main-header .menu {
+      font-size: 28px;
+      cursor: pointer;
+      color: #fff;
     }
 
     .container {
@@ -78,10 +86,6 @@
       font-size: 15px;
     }
 
-    .btn.secondary {
-      background: #555;
-    }
-
     /* Floating WhatsApp */
     .floating-wa {
       position: fixed;
@@ -110,6 +114,11 @@
       margin-top: 50px;
       font-size: 14px;
       color: #777;
+    }
+
+    a {
+      color: #0f3d2e;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -185,11 +194,6 @@
     © RafaBiro – Biro Jasa Pajak Kendaraan | Bekasi Barat – Jabodetabek
   </div>
 
-  <div class="container">
-  <h2>Perpanjangan STNK Kendaraan...</h2>
-  <p>...</p>
-</div>
-  
 </div>
 
 <!-- WHATSAPP FLOATING -->
