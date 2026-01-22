@@ -2,7 +2,9 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>RafaBiro – Jasa Perpanjang STNK, Mutasi & Balik Nama</title>
+  <title>RafaBiro – Jasa Perpanjang STNK, Mutasi, Balik Nama & SIM Jabodetabek</title>
+  <meta name="description" content="RafaBiro adalah biro jasa layanan pajak kendaraan yang aman dan terpercaya. Melayani perpanjang STNK tahunan & 5 tahunan, balik nama, mutasi, STNK hilang, SIM, ETLE, dan blokir kendaraan. Berpengalaman lebih dari 13 tahun. Lokasi: Bintara, Bekasi Barat – Jabodetabek.">
+  <meta name="keywords" content="RafaBiro, biro jasa pajak kendaraan, perpanjang STNK, STNK hilang, balik nama, mutasi kendaraan, SIM, ETLE, blokir kendaraan, Bekasi Barat, Jabodetabek">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -14,83 +16,142 @@
       line-height: 1.6;
     }
 
-    /* HEADER SAMA DENGAN ARTIKEL */
-    header.main-header {
-      background: #0f3d2e;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-    }
-
-    header.main-header img {
-      height: 42px;
-    }
-
-    header.main-header .menu {
-      font-size: 28px;
-      cursor: pointer;
-      color: #fff;
-    }
-
     .container {
       max-width: 960px;
       margin: auto;
-      background: #fff;
-      padding: 30px 20px 50px;
+      padding: 25px 20px 40px;
+      background: #ffffff;
     }
 
-    h2, h3 {
+    .hero {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 14px;
+      margin-bottom: 18px;
+    }
+
+    .hero h2 {
+      margin: 10px 0 6px;
       color: #0f3d2e;
-      margin-top: 30px;
+      font-size: 22px;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 8px;
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      font-size: 15px;
+      color: #555;
     }
 
     section {
       margin-top: 35px;
     }
 
-    /* Kotak halus */
-    .box {
-      background: #f4f6f5;
-      padding: 22px;
-      border-radius: 14px;
+    section h3,
+    .kenapa-rafabiro h2,
+    .review-pelanggan h2,
+    .lokasi h2 {
+      color: #0f3d2e;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
-    /* Review */
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .kenapa-rafabiro {
+      background: #f4f6f5;
+      padding: 20px;
+      border-radius: 14px;
+      margin-top: 30px;
+    }
+
+    .review-pelanggan .review {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 0 0 300px;
+      margin-right: 15px;
+    }
+
     .review-slider {
       display: flex;
-      gap: 20px;
       overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 10px;
     }
 
-    .review {
-      min-width: 280px;
-      background: #f9f9f9;
-      padding: 18px;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    .review-slider::-webkit-scrollbar { height: 8px; }
+    .review-slider::-webkit-scrollbar-thumb { background: #2e7d32; border-radius: 4px; }
+    .review-slider::-webkit-scrollbar-track { background: #f1f1f1; }
+
+    .review p {
+      font-size: 0.95em;
+      margin-bottom: 10px;
+      color: #333;
     }
 
-    .stars {
+    .review .stars {
       color: #ffc107;
-      font-size: 18px;
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      transition: transform 0.3s;
     }
 
-    /* Floating WA */
-    .floating-wa {
+    .review .stars:hover { transform: scale(1.2); }
+
+    .review strong {
+      font-size: 0.85em;
+      color: #555;
+    }
+
+    .lokasi p,
+    .lokasi a {
+      color: #0f3d2e;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .cta {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #25d366;
+      color: #fff;
+      padding: 18px 26px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .cta a:hover {
+      background: #1ebe5d;
+    }
+
+    .floating-wa-text {
       position: fixed;
       bottom: 25px;
       right: 25px;
-      background: #25d366;
+      background-color: #25d366;
       color: #fff;
       padding: 12px 20px;
       border-radius: 50px;
@@ -100,120 +161,145 @@
       font-weight: bold;
       text-decoration: none;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
       z-index: 9999;
     }
 
-    .floating-wa img {
+    .floating-wa-text:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .wa-icon {
       width: 40px;
+      height: 40px;
+      display: block;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 15px;
     }
 
     .footer {
       text-align: center;
-      margin-top: 50px;
       font-size: 14px;
       color: #777;
+      margin-top: 45px;
     }
 
-    a {
-      color: #0f3d2e;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    .header-rafabiro {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 42px;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0f3d2e;
+}
   </style>
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="main-header">
-  <img src="logorafabiro.webp" alt="RafaBiro">
-  <div class="menu">☰</div>
+<header class="header-rafabiro">
+  <div class="header-inner">
+    <img src="logorafabiro.webp" alt="RafaBiro" class="logo">
+    <button class="menu-toggle">☰</button>
+  </div>
 </header>
 
 <div class="container">
 
-  <section>
+  <div class="hero">
+    <img src="aan.jpg" alt="RafaBiro - Biro Jasa Pajak Kendaraan Bekasi Barat">
     <h2>Sudah Ribuan Dokumen Kami Bantu Bereskan</h2>
     <p>
-      RafaBiro membantu pengurusan administrasi kendaraan
-      agar aman, legal, dan tidak membuang waktu Anda.
+      RafaBiro membantu pengurusan administrasi kendaraan dengan proses yang jelas,
+      aman, dan terpercaya.
+      Hadir untuk Anda yang ingin urusan kendaraan selesai
+      tanpa ribet dan tanpa buang waktu.
     </p>
-  </section>
+  </div>
 
   <section>
     <h3>Layanan RafaBiro</h3>
     <ul>
-      <li>Perpanjangan STNK Tahunan & 5 Tahunan</li>
+      <li>Perpanjangan STNK (Tahunan & 5 Tahun)</li>
       <li>Balik Nama & Mutasi Kendaraan</li>
       <li>STNK & BPKB Hilang</li>
       <li>SIM, ETLE & Blokir Kendaraan</li>
     </ul>
   </section>
 
-  <section class="box">
-    <h3>Kenapa RafaBiro?</h3>
+  <section class="kenapa-rafabiro">
+    <h2>Kenapa RafaBiro?</h2>
     <ul>
-      <li>Pengalaman lebih dari 13 tahun</li>
+      <li>Pengalaman tim lebih dari <strong>13 tahun</strong></li>
       <li>Proses transparan & legal</li>
-      <li>Aman dan bisa dipantau</li>
-      <li>Konsultasi ramah & solutif</li>
+      <li>Aman, rapi, dan bisa dipantau</li>
+      <li>Konsultasi ramah dan solutif</li>
     </ul>
   </section>
 
-  <section class="box">
-    <h3>Alur Pengurusan</h3>
-    <ol>
-      <li>Konsultasi kebutuhan</li>
-      <li>Cek berkas & estimasi biaya</li>
-      <li>Penyerahan dokumen</li>
-      <li>Proses pengurusan</li>
-      <li>Dokumen selesai</li>
-    </ol>
-    <p>
-      <strong>Catatan:</strong><br>
-      • Tersedia antar–jemput dokumen<br>
-      • Cek fisik dibantu sesuai kebutuhan
-    </p>
+  <section class="lokasi">
+    <h2>Lokasi Kantor RafaBiro</h2>
+    <p>Pondok Cipta - Griya Bintara Indah<br>Blok AA 3 No.14 Bintara, Bekasi Barat</p>
+    <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank">📍 Lihat Lokasi di Google Maps</a>
   </section>
 
-  <section>
-    <h3>Lokasi Kantor</h3>
-    <p>
-      Griya Bintara Indah Blok AA 3 No.14<br>
-      Bekasi Barat
-    </p>
-    <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank">
-      📍 Lihat di Google Maps
-    </a>
-  </section>
-
-  <section>
-    <h3>Review Pelanggan</h3>
+  <section class="review-pelanggan">
+    <h2>Review Pelanggan</h2>
     <div class="review-slider">
       <div class="review">
-        <p>“Jelas, cepat, dan aman.”</p>
+        <p>"Terbaik di Bintara, jasanya murah, detail dijelasin dan bisa bayar pas sudah jadi"</p>
         <div class="stars">★★★★★</div>
-        <strong>– Muhammad Raihan</strong>
+        <strong>- Muhammad Raihan, Bekasi</strong>
       </div>
       <div class="review">
-        <p>“ETLE & blokir beres tanpa ribet.”</p>
+        <p>"Blokir kendaraan dan ETLE urusannya jadi mudah, recommended!"</p>
+        <div class="stars">★★★★☆</div>
+        <strong>- Sudarman, Jakarta</strong>
+      </div>
+      <div class="review">
+        <p>"Mutasi & baliknama selalu jadi andalan di showroom ku, mantap mas aan!"</p>
         <div class="stars">★★★★★</div>
-        <strong>– Sudarman</strong>
+        <strong>- Riska Oktaviani, Tangerang</strong>
       </div>
     </div>
   </section>
 
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/6285714685247" class="floating-wa-text">
+    <img src="wa.png" alt="WhatsApp" class="wa-icon">
+    <span>Konsultasi via WhatsApp</span>
+  </a>
+
+  <div class="links">
+    <a href="artikel.html">📘 Baca Artikel & Panduan Lengkap</a>
+  </div>
+
   <div class="footer">
-    © RafaBiro – Biro Jasa Pajak Kendaraan
+    © RafaBiro – Biro Jasa Pajak Kendaraan | Bekasi Barat – Jabodetabek
   </div>
 
 </div>
-
-<!-- WHATSAPP -->
-<a href="https://wa.me/6285714685247" class="floating-wa">
-  <img src="wa.png" alt="WhatsApp">
-  <span>Konsultasi WhatsApp</span>
-</a>
 
 </body>
 </html>
