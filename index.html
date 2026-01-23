@@ -17,51 +17,85 @@
       line-height: 1.6;
     }
 
-    .container { max-width: 960px; margin: auto; padding: 25px 20px 40px; background: #fff; }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 25px 20px 40px;
+      background: #fff;
+    }
 
     /* Header */
-    .header-rafabiro { background: #ffffff; border-bottom: 1px solid #eee; position: relative; z-index: 1000; }
+    .header-rafabiro {
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+      position: relative;
+    }
     .header-inner {
-      max-width: 960px; margin: auto; padding: 12px 20px;
-      display: flex; align-items: center; justify-content: space-between;
+      max-width: 960px;
+      margin: auto;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     .logo { height: 65px; }
 
-    /* Menu titik 3 / hamburger */
+    /* Menu titik 3 */
+    .menu-toggle {
+      font-size: 26px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #0f3d2e;
+      position: relative;
+    }
     .nav-menu {
-      display: flex; gap: 20px;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: rgba(15, 61, 46, 0.95); /* semi transparan hijau gelap */
+      width: 220px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 8px 0; /* jarak atas bawah dikompak */
+      z-index: 999;
     }
     .nav-menu a {
-      text-decoration: none; color: #0f3d2e; font-weight: 600; font-size: 15px;
-      transition: color 0.3s, background 0.3s;
+      padding: 8px 20px; /* jarak dikompak */
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
     }
-    .nav-menu a:hover { color: #25d366; }
-    .menu-toggle {
-      font-size: 26px; background: none; border: none; cursor: pointer; color: #0f3d2e; display: none;
+    .nav-menu a:hover {
+      background: rgba(37, 211, 102, 0.15);
+      color: #25d366;
     }
-
-    /* Responsive Dropdown */
-    @media screen and (max-width: 768px) {
-      .nav-menu { 
-        display: none; flex-direction: column; position: absolute;
-        top: 100%; right: 0; background: rgba(255,255,255,0.95);
-        width: 220px; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-        padding: 15px 0; transition: all 0.3s ease;
-      }
-      .nav-menu a { padding: 12px 20px; display: block; }
-      .nav-menu.active { display: flex; }
-      .menu-toggle { display: block; }
-    }
+    .nav-menu.active { display: flex; }
 
     /* Hero */
-    .hero { text-align: center; margin-bottom: 35px; }
-    .hero img { width: 100%; max-width: 380px; border-radius: 14px; margin-bottom: 18px; }
+    .hero {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 14px;
+      margin-bottom: 18px;
+    }
     .hero h2 { margin: 10px 0 6px; color: #0f3d2e; font-size: 22px; }
     .hero p { max-width: 720px; margin: auto; font-size: 15px; color: #555; }
 
     /* Section Titles */
     section h3, .kenapa-rafabiro h2, .review-pelanggan h2, .lokasi h2, .alur-rafabiro h2 {
-      color: #0f3d2e; font-size: 22px; font-weight: 700; margin-bottom: 12px;
+      color: #0f3d2e;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
     /* Lists */
@@ -71,17 +105,34 @@
     ol li { margin-bottom: 10px; font-size: 15px; color: #333; }
 
     /* Kenapa RafaBiro */
-    .kenapa-rafabiro { background: #f4f6f5; padding: 20px; border-radius: 14px; margin-top: 30px; }
+    .kenapa-rafabiro {
+      background: #f4f6f5;
+      padding: 20px;
+      border-radius: 14px;
+      margin-top: 30px;
+    }
 
     /* Alur Pengurusan */
-    .alur-rafabiro { background: #f4f6f5; padding: 22px; border-radius: 14px; margin-top: 35px; }
+    .alur-rafabiro {
+      background: #f4f6f5;
+      padding: 22px;
+      border-radius: 14px;
+      margin-top: 35px;
+    }
     .alur-note { margin-top: 14px; font-size: 14px; color: #555; }
 
     /* Lokasi */
     .lokasi p, .lokasi a { color: #0f3d2e; font-size: 15px; text-decoration: none; }
 
     /* Review Pelanggan */
-    .review-pelanggan .review { background: #f9f9f9; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); flex: 0 0 300px; margin-right: 15px; }
+    .review-pelanggan .review {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 0 0 300px;
+      margin-right: 15px;
+    }
     .review-slider { display: flex; overflow-x: auto; gap: 20px; padding-bottom: 10px; }
     .review-slider::-webkit-scrollbar { height: 8px; }
     .review-slider::-webkit-scrollbar-thumb { background: #2e7d32; border-radius: 4px; }
@@ -97,13 +148,27 @@
     .cta a:hover { background: #1ebe5d; }
 
     /* Floating WA */
-    .floating-wa-text { position: fixed; bottom: 25px; right: 25px; background-color: #25d366; color: #fff; padding: 12px 20px; border-radius: 50px; display: flex; align-items: center; gap: 12px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s ease; z-index: 9999; }
+    .floating-wa-text {
+      position: fixed; bottom: 25px; right: 25px;
+      background-color: #25d366; color: #fff;
+      padding: 12px 20px; border-radius: 50px;
+      display: flex; align-items: center; gap: 12px;
+      font-weight: bold; text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: all 0.3s ease; z-index: 9999;
+    }
     .floating-wa-text:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
     .wa-icon { width: 40px; height: 40px; display: block; }
 
     /* Links & Footer */
     .links { text-align: center; margin-top: 30px; font-size: 15px; }
     .footer { text-align: center; font-size: 14px; color: #777; margin-top: 45px; }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .nav-menu { width: 180px; }
+      .nav-menu a { padding: 8px 16px; }
+    }
   </style>
 </head>
 <body>
@@ -111,25 +176,27 @@
 <header class="header-rafabiro">
   <div class="header-inner">
     <img src="logorafabiro.webp" alt="RafaBiro" class="logo">
+    <button class="menu-toggle">☰</button>
     <nav class="nav-menu">
       <a href="index.html">Home</a>
       <a href="artikel.html">Artikel</a>
       <a href="#layanan">Layanan</a>
       <a href="#alur">Alur</a>
-      <a href="#kenapa">Kenapa RafaBiro</a>
-      <a href="#review">Review</a>
+      <a href="#kenapa">Kenapa</a>
       <a href="#lokasi">Lokasi</a>
+      <a href="#review">Review</a>
     </nav>
-    <button class="menu-toggle">☰</button>
   </div>
 </header>
 
 <div class="container">
-
   <div class="hero">
     <img src="aan.jpg" alt="RafaBiro - Biro Jasa Pajak Kendaraan Bekasi Barat">
     <h2>Sudah Ribuan Dokumen Kami Bantu Bereskan</h2>
-    <p>RafaBiro membantu pengurusan administrasi kendaraan dengan proses yang jelas, aman, dan terpercaya. Hadir untuk Anda yang ingin urusan kendaraan selesai tanpa ribet, tanpa antre di samsat, dan tanpa buang waktu.</p>
+    <p>
+      RafaBiro membantu pengurusan administrasi kendaraan dengan proses yang jelas, aman, dan terpercaya.
+      Hadir untuk Anda yang ingin urusan kendaraan selesai tanpa ribet, tanpa antre di samsat, dan tanpa buang waktu.
+    </p>
   </div>
 
   <section id="layanan">
@@ -178,9 +245,21 @@
   <section class="review-pelanggan" id="review">
     <h2>Review Pelanggan</h2>
     <div class="review-slider">
-      <div class="review"><p>"Terbaik di Bintara sih, jasanya murah, detail dijelasin dan bisa bayar pas udah jadi"</p><div class="stars">★★★★★</div><strong>- Muhammad Raihan, Bekasi</strong></div>
-      <div class="review"><p>"Blokir kendaraan dan ETLE urusannya jadi gampang, recommended!"</p><div class="stars">★★★★★</div><strong>- Sudarman, Jakarta</strong></div>
-      <div class="review"><p>"Andalan di showroom ku buat proses mutasi baliknama, mantap mas aan!"</p><div class="stars">★★★★★</div><strong>- Riska Oktaviani, Tangerang</strong></div>
+      <div class="review">
+        <p>"Terbaik di Bintara sih, jasanya murah, detail dijelasin dan bisa bayar pas udah jadi"</p>
+        <div class="stars">★★★★★</div>
+        <strong>- Muhammad Raihan, Bekasi</strong>
+      </div>
+      <div class="review">
+        <p>"Blokir kendaraan dan ETLE urusannya jadi gampang, recommended!"</p>
+        <div class="stars">★★★★★</div>
+        <strong>- Sudarman, Jakarta</strong>
+      </div>
+      <div class="review">
+        <p>"Andalan di showroom ku buat proses mutasi baliknama, mantap mas aan!"</p>
+        <div class="stars">★★★★★</div>
+        <strong>- Riska Oktaviani, Tangerang</strong>
+      </div>
     </div>
   </section>
 
@@ -190,15 +269,31 @@
     <span>Konsultasi via WhatsApp</span>
   </a>
 
-  <div class="links"><a href="artikel.html">📘 Baca Artikel & Panduan Lengkap</a></div>
-  <div class="footer">© RafaBiro – Biro Jasa Pajak Kendaraan | Bekasi Barat – Jabodetabek</div>
+  <div class="links">
+    <a href="artikel.html">📘 Baca Artikel & Panduan Lengkap</a>
+  </div>
+
+  <div class="footer">
+    © RafaBiro – Biro Jasa Pajak Kendaraan | Bekasi Barat – Jabodetabek
+  </div>
 </div>
 
 <script>
-  // Tombol titik 3
-  const toggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.nav-menu');
-  toggle.addEventListener('click', () => { menu.classList.toggle('active'); });
+// Toggle menu titik 3
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.nav-menu');
+
+toggle.addEventListener('click', (e) => {
+  menu.classList.toggle('active');
+  e.stopPropagation(); // supaya klik toggle sendiri ga tertutup
+});
+
+// Tutup menu jika klik di luar
+document.addEventListener('click', (e) => {
+  if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+    menu.classList.remove('active');
+  }
+});
 </script>
 
 </body>
