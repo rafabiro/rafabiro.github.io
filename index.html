@@ -1,257 +1,82 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>RafaBiro – Jasa Perpanjang STNK, Mutasi, Balik Nama & SIM Jabodetabek</title>
-  <meta name="description" content="RafaBiro adalah biro jasa layanan pajak kendaraan yang aman dan terpercaya. Melayani perpanjang STNK tahunan & 5 tahunan, balik nama, mutasi, STNK hilang, SIM, ETLE, dan blokir kendaraan. Berpengalaman lebih dari 13 tahun. Lokasi: Bintara, Bekasi Barat – Jabodetabek.">
-  <meta name="keywords" content="RafaBiro, biro jasa pajak kendaraan, perpanjang STNK, STNK hilang, balik nama, mutasi kendaraan, SIM, ETLE, blokir kendaraan, Bekasi Barat, Jabodetabek">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>RafaBiro – Jasa Perpanjang STNK, Mutasi, Balik Nama & SIM Jabodetabek</title>
+<meta name="description" content="RafaBiro adalah biro jasa layanan pajak kendaraan yang aman dan terpercaya. Melayani perpanjang STNK tahunan & 5 tahunan, balik nama, mutasi, STNK hilang, SIM, ETLE, dan blokir kendaraan. Berpengalaman lebih dari 13 tahun. Lokasi: Bintara, Bekasi Barat – Jabodetabek.">
+<meta name="keywords" content="RafaBiro, biro jasa pajak kendaraan, perpanjang STNK, STNK hilang, balik nama, mutasi kendaraan, SIM, ETLE, blokir kendaraan, Bekasi Barat, Jabodetabek">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      line-height: 1.6;
-    }
+<style>
+/* Reset & body */
+body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#f4f6f8; color:#333; line-height:1.6; }
 
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 25px 20px 40px;
-      background: #ffffff;
-    }
+/* Container */
+.container { max-width:960px; margin:auto; padding:25px 20px 40px; background:#fff; }
 
-    .hero {
-      text-align: center;
-      margin-bottom: 35px;
-    }
+/* Header */
+.header-rafabiro { background:#fff; border-bottom:1px solid #eee; }
+.header-inner { max-width:960px; margin:auto; padding:12px 20px; display:flex; align-items:center; justify-content:space-between; }
+.logo { height:65px; }
+.menu-toggle { font-size:24px; background:none; border:none; cursor:pointer; color:#0f3d2e; }
 
-    .hero img {
-      width: 100%;
-      max-width: 380px;
-      border-radius: 14px;
-      margin-bottom: 18px;
-    }
+/* Hero */
+.hero { text-align:center; margin-bottom:35px; }
+.hero img { width:100%; max-width:380px; border-radius:14px; margin-bottom:18px; }
+.hero h2 { margin:10px 0 6px; color:#0f3d2e; font-size:22px; }
+.hero p { max-width:720px; margin:auto; font-size:15px; color:#555; }
 
-    .hero h2 {
-      margin: 10px 0 6px;
-      color: #0f3d2e;
-      font-size: 22px;
-    }
+/* Section titles */
+section h3, .kenapa-rafabiro h2, .review-pelanggan h2, .lokasi h2, .alur-rafabiro h2 { color:#0f3d2e; font-size:22px; font-weight:700; margin-bottom:12px; }
 
-    .hero p {
-      max-width: 720px;
-      margin: auto;
-      font-size: 15px;
-      color: #555;
-    }
+/* Lists */
+ul { padding-left:20px; margin:0; }
+ul li { margin-bottom:12px; color:#333; line-height:1.6; }
 
-    section {
-      margin-top: 35px;
-    }
+/* Kenapa RafaBiro */
+.kenapa-rafabiro { background:#f4f6f5; padding:20px; border-radius:14px; margin-top:30px; }
 
-    section h3,
-    .kenapa-rafabiro h2,
-    .review-pelanggan h2,
-    .lokasi h2,
-    .alur-rafabiro h2 {
-      color: #0f3d2e;
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
+/* Alur Pengurusan */
+.alur-rafabiro { background:#f4f6f5; padding:22px; border-radius:14px; margin-top:35px; }
+.alur-rafabiro ol { padding-left:20px; margin:0; }
+.alur-rafabiro li { margin-bottom:10px; font-size:15px; color:#333; }
+.alur-note { margin-top:14px; font-size:14px; color:#555; }
 
-    ul {
-      padding-left: 20px;
-      margin: 0;
-    }
+/* Review pelanggan */
+.review-pelanggan .review { background:#f9f9f9; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1); flex:0 0 300px; margin-right:15px; }
+.review-slider { display:flex; overflow-x:auto; gap:20px; padding-bottom:10px; }
+.review-slider::-webkit-scrollbar { height:8px; }
+.review-slider::-webkit-scrollbar-thumb { background:#2e7d32; border-radius:4px; }
+.review-slider::-webkit-scrollbar-track { background:#f1f1f1; }
+.review p { font-size:0.95em; margin-bottom:10px; color:#333; }
+.review .stars { color:#ffc107; font-size:1.1em; margin-bottom:8px; transition: transform 0.3s; }
+.review .stars:hover { transform:scale(1.2); }
+.review strong { font-size:0.85em; color:#555; }
 
-    ul li {
-      margin-bottom: 12px;
-      color: #333;
-      line-height: 1.6;
-    }
+/* Lokasi */
+.lokasi p, .lokasi a { color:#0f3d2e; font-size:15px; text-decoration:none; }
 
-    .kenapa-rafabiro {
-      background: #f4f6f5;
-      padding: 20px;
-      border-radius: 14px;
-      margin-top: 30px;
-    }
+/* CTA */
+.cta { margin-top:40px; text-align:center; }
+.cta a { display:inline-block; background:#25d366; color:#fff; padding:18px 26px; border-radius:10px; text-decoration:none; font-size:17px; font-weight:bold; }
+.cta a:hover { background:#1ebe5d; }
 
-    .review-pelanggan .review {
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      flex: 0 0 300px;
-      margin-right: 15px;
-    }
+/* Floating WA */
+.floating-wa-text { position:fixed; bottom:25px; right:25px; background-color:#25d366; color:#fff; padding:12px 20px; border-radius:50px; display:flex; align-items:center; gap:12px; font-weight:bold; text-decoration:none; box-shadow:0 4px 12px rgba(0,0,0,0.3); transition:all 0.3s ease; z-index:9999; }
+.floating-wa-text:hover { transform:scale(1.05); box-shadow:0 8px 20px rgba(0,0,0,0.4); }
+.wa-icon { width:40px; height:40px; display:block; }
 
-    .review-slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 20px;
-      padding-bottom: 10px;
-    }
+/* Footer & links */
+.links { text-align:center; margin-top:30px; font-size:15px; }
+.footer { text-align:center; font-size:14px; color:#777; margin-top:45px; }
 
-    .review-slider::-webkit-scrollbar { height: 8px; }
-    .review-slider::-webkit-scrollbar-thumb { background: #2e7d32; border-radius: 4px; }
-    .review-slider::-webkit-scrollbar-track { background: #f1f1f1; }
-
-    .review p {
-      font-size: 0.95em;
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .review .stars {
-      color: #ffc107;
-      font-size: 1.1em;
-      margin-bottom: 8px;
-      transition: transform 0.3s;
-    }
-
-    .review .stars:hover { transform: scale(1.2); }
-
-    .review strong {
-      font-size: 0.85em;
-      color: #555;
-    }
-
-    .lokasi p,
-    .lokasi a {
-      color: #0f3d2e;
-      font-size: 15px;
-      text-decoration: none;
-    }
-
-    .cta {
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .cta a {
-      display: inline-block;
-      background: #25d366;
-      color: #fff;
-      padding: 18px 26px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 17px;
-      font-weight: bold;
-    }
-
-    .cta a:hover {
-      background: #1ebe5d;
-    }
-
-    .floating-wa-text {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background-color: #25d366;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      transition: all 0.3s ease;
-      z-index: 9999;
-    }
-
-    .floating-wa-text:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    }
-
-    .wa-icon {
-      width: 40px;
-      height: 40px;
-      display: block;
-    }
-
-    .links {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 15px;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      margin-top: 45px;
-    }
-
-    .header-rafabiro {
-      background: #ffffff;
-      border-bottom: 1px solid #eee;
-    }
-
-    .header-inner {
-      max-width: 960px;
-      margin: auto;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      height: 65px;
-    }
-
-    .menu-toggle {
-      font-size: 24px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: #0f3d2e;
-    }
-
-    /* Alur Pengurusan */
-    .alur-rafabiro {
-      background: #f4f6f5;
-      padding: 22px;
-      border-radius: 14px;
-      margin-top: 35px;
-    }
-
-    .alur-rafabiro ol {
-      padding-left: 20px;
-      margin: 0;
-    }
-
-    .alur-rafabiro li {
-      margin-bottom: 10px;
-      font-size: 15px;
-      color: #333;
-    }
-
-    .alur-note {
-      margin-top: 14px;
-      font-size: 14px;
-      color: #555;
-    }
-
-    /* Konten artikel */
-    .konten-artikel {
-      margin-top: 30px;
-      font-size: 15px;
-      color: #333;
-      line-height: 1.7;
-    }
-  </style>
+/* Responsive */
+@media(max-width:768px) { .header-inner { flex-direction:row; } }
+</style>
 </head>
 <body>
 
+<!-- Header -->
 <header class="header-rafabiro">
   <div class="header-inner">
     <img src="logorafabiro.webp" alt="RafaBiro" class="logo">
@@ -261,17 +86,14 @@
 
 <div class="container">
 
+  <!-- Hero -->
   <div class="hero">
     <img src="aan.jpg" alt="RafaBiro - Biro Jasa Pajak Kendaraan Bekasi Barat">
     <h2>Sudah Ribuan Dokumen Kami Bantu Bereskan</h2>
-    <p>
-      RafaBiro membantu pengurusan administrasi kendaraan dengan proses yang jelas,
-      aman, dan terpercaya.
-      Hadir untuk Anda yang ingin urusan kendaraan selesai
-      tanpa ribet, tanpa antre di samsat dan tanpa buang waktu.
-    </p>
+    <p>RafaBiro membantu pengurusan administrasi kendaraan dengan proses yang jelas, aman, dan terpercaya. Hadir untuk Anda yang ingin urusan kendaraan selesai tanpa ribet, tanpa antre di samsat, dan tanpa buang waktu.</p>
   </div>
 
+  <!-- Layanan -->
   <section>
     <h3>Layanan RafaBiro</h3>
     <ul>
@@ -282,7 +104,8 @@
       <li>Request Nomor Cantik</li>
     </ul>
   </section>
-  
+
+  <!-- Alur Pengurusan -->
   <section class="alur-rafabiro">
     <h2>Alur Pengurusan di RafaBiro</h2>
     <ol>
@@ -299,6 +122,7 @@
     </div>
   </section>
 
+  <!-- Kenapa RafaBiro -->
   <section class="kenapa-rafabiro">
     <h2>Kenapa RafaBiro?</h2>
     <ul>
@@ -309,12 +133,14 @@
     </ul>
   </section>
 
+  <!-- Lokasi -->
   <section class="lokasi">
     <h2>Lokasi Kantor RafaBiro</h2>
     <p>Pondok Cipta - Griya Bintara Indah<br>Blok AA 3 No.14 Bintara, Bekasi Barat</p>
     <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank">📍 Lihat Lokasi di Google Maps</a>
   </section>
 
+  <!-- Review Pelanggan -->
   <section class="review-pelanggan">
     <h2>Review Pelanggan</h2>
     <div class="review-slider">
@@ -334,10 +160,6 @@
         <strong>- Riska Oktaviani, Tangerang</strong>
       </div>
     </div>
-  </section>
-
-  <section class="konten-artikel">
-    <!-- Konten artikel ditempel di sini, tanpa placeholder -->
   </section>
 
   <!-- Floating WhatsApp -->
