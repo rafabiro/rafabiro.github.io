@@ -68,6 +68,13 @@ ul li { margin-bottom:10px; }
 }
 .floating-wa img { width:40px; height:40px; }
 
+/* Share Section */
+.share-section { text-align:center; margin:40px 0 30px; font-size:15px; color:#0f3d2e; }
+.share-section span { display:block; margin-bottom:12px; font-weight:600; }
+.share-icons a { display:inline-block; margin:0 8px; transition: transform 0.3s, filter 0.3s; }
+.share-icons a img { width:36px; height:36px; }
+.share-icons a:hover { transform:scale(1.15); filter: brightness(1.2); }
+
 /* Footer */
 .footer { text-align:center; margin-top:50px; font-size:14px; color:#777; }
 
@@ -77,24 +84,17 @@ ul li { margin-bottom:10px; }
   .nav-menu.active { display:flex; }
   .nav-menu a { padding:10px 20px; display:block; color:#0f3d2e; }
   .menu-toggle { display:flex; }
+  .share-icons a img { width:32px; height:32px; margin:0 6px; }
 }
-  .location a {
+.location a {
   display: inline-block;
   margin-top: 4px; /* jarak sedikit dari teks */
   color: #0f3d2e;
   text-decoration: none;
   font-weight: 600;
 }
-.location a:hover {
-  color: #25d366;
-  text-decoration: underline;
-}
-.location img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 12px;
-  margin-top: 8px; /* jarak dari teks/link */
-}
+.location a:hover { color: #25d366; text-decoration: underline; }
+.location img { width:100%; max-width:600px; border-radius:12px; margin-top:8px; }
 </style>
 </head>
 
@@ -152,11 +152,30 @@ ul li { margin-bottom:10px; }
 
   <div class="location">
     <p>
-  Pondok Cipta - Griya Bintara Indah<br>
-  Blok AA 3 No.14 Bintara - Bekasi Barat<br>
-  <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank">📍 Lihat lokasi di Google Maps</a>
-</p>
+      Pondok Cipta - Griya Bintara Indah<br>
+      Blok AA 3 No.14 Bintara - Bekasi Barat<br>
+      <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank">📍 Lihat lokasi di Google Maps</a>
+    </p>
     <img src="kantorfix.jpg" alt="Kantor RafaBiro Bekasi Barat">
+  </div>
+
+  <!-- SHARE SECTION -->
+  <div class="share-section">
+    <span>Bagikan artikel ini:</span>
+    <div class="share-icons">
+      <a href="https://wa.me/?text=Check+this+out+https://rafabiro.id/artikel.html" target="_blank" title="Share via WhatsApp">
+        <img src="medsos1.png" alt="WhatsApp">
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://rafabiro.id/artikel.html" target="_blank" title="Share via Facebook">
+        <img src="medsos2.png" alt="Facebook">
+      </a>
+      <a href="https://twitter.com/intent/tweet?url=https://rafabiro.id/artikel.html&text=Perpanjangan+STNK" target="_blank" title="Share via Twitter">
+        <img src="medsos3.png" alt="Twitter">
+      </a>
+      <a href="https://t.me/share/url?url=https://rafabiro.id/artikel.html&text=Perpanjangan+STNK" target="_blank" title="Share via Telegram">
+        <img src="medsos4.png" alt="Telegram">
+      </a>
+    </div>
   </div>
 
   <div class="btn-group">
@@ -167,6 +186,7 @@ ul li { margin-bottom:10px; }
   <div class="footer">
     © RafaBiro – Biro Jasa Pajak Kendaraan | Bekasi Barat – Jabodetabek
   </div>
+
 </div>
 
 <a href="https://wa.me/6285714685247" class="floating-wa">
