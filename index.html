@@ -8,7 +8,7 @@
 
 <style>
 /* Reset & Body */
-body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#f4f6f8; color:#333; line-height:1.6; }
+body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#f4f6f8; color:#333; line-height:1.6; scroll-behavior:smooth; }
 .container { max-width:960px; margin:auto; padding:25px 20px 40px; background:#fff; }
 
 /* Header & Navbar */
@@ -29,13 +29,17 @@ body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#f4f6f8; c
 .hero p { max-width:720px; margin:auto; font-size:15px; color:#555; }
 
 /* Section Titles */
-section h3, .kenapa-rafabiro h2, .review-pelanggan h2, .lokasi h2, .alur-rafabiro h2 { color:#0f3d2e; font-size:22px; font-weight:700; margin-bottom:12px; }
+section h2, section h3 { color:#0f3d2e; font-size:22px; font-weight:700; margin-bottom:12px; }
 
 /* Lists */
 ul { padding-left:20px; margin:0; }
 ul li { margin-bottom:12px; color:#333; line-height:1.6; }
 ol { padding-left:20px; margin:0; }
 ol li { margin-bottom:10px; font-size:15px; color:#333; }
+
+/* Layanan Section */
+.layanan { background:#f4f6f5; padding:20px; border-radius:14px; margin-top:30px; }
+.layanan ul li { margin-bottom:10px; font-weight:500; }
 
 /* Kenapa RafaBiro */
 .kenapa-rafabiro { background:#f4f6f5; padding:20px; border-radius:14px; margin-top:30px; }
@@ -88,7 +92,7 @@ ol li { margin-bottom:10px; font-size:15px; color:#333; }
     <nav class="nav-menu">
       <a href="index.html">Home</a>
       <a href="artikel.html">Artikel</a>
-      <a href="#">Layanan</a>
+      <a href="#layanan">Layanan</a>
     </nav>
     <button class="menu-toggle">☰</button>
   </div>
@@ -105,7 +109,18 @@ ol li { margin-bottom:10px; font-size:15px; color:#333; }
     </p>
   </div>
 
-  <section class="alur-rafabiro">
+  <section id="layanan" class="layanan">
+    <h2>Layanan RafaBiro</h2>
+    <ul>
+      <li>Perpanjangan STNK (Tahunan & 5 Tahun)</li>
+      <li>Balik Nama & Mutasi Kendaraan</li>
+      <li>STNK & BPKB Hilang</li>
+      <li>SIM, ETLE & Blokir Kendaraan</li>
+      <li>Request Nomor Cantik</li>
+    </ul>
+  </section>
+
+  <section class="alur-rafabiro" id="alur">
     <h2>Alur Pengurusan di RafaBiro</h2>
     <ol>
       <li>Konsultasi kebutuhan & jenis pengurusan</li>
@@ -137,7 +152,7 @@ ol li { margin-bottom:10px; font-size:15px; color:#333; }
     <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank">📍 Lihat Lokasi di Google Maps</a>
   </section>
 
-  <section class="review-pelanggan">
+  <section class="review-pelanggan" id="review">
     <h2>Review Pelanggan</h2>
     <div class="review-slider">
       <div class="review">
