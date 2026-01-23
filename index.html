@@ -19,8 +19,24 @@ body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#f4f6f8; c
 .nav-menu a { text-decoration:none; color:#0f3d2e; padding:6px 10px; border-radius:6px; transition: all 0.3s ease; }
 .nav-menu a:hover { background:rgba(37,211,102,0.2); color:#25d366; }
 
-/* Toggle Mobile */
-.menu-toggle { display:none; font-size:26px; background:none; border:none; cursor:pointer; color:#0f3d2e; }
+/* Toggle Mobile (Titik 3) */
+.menu-toggle {
+  display:none;
+  font-size:22px;
+  width:42px;
+  height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(37,211,102,0.9);
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition: all 0.3s ease;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+.menu-toggle:hover { background: rgba(37,211,102,1); transform: scale(1.05); }
 
 /* Hero */
 .hero { text-align:center; margin-bottom:35px; }
@@ -77,10 +93,23 @@ ol li { margin-bottom:10px; font-size:15px; color:#333; }
 
 /* Mobile Responsive */
 @media screen and (max-width:768px){
-  .nav-menu { display:none; flex-direction:column; position:absolute; top:60px; right:0; background:rgba(37,211,102,0.95); width:200px; box-shadow:0 4px 12px rgba(0,0,0,0.15); border-radius:8px; padding:10px 0; gap:0; z-index:1000; }
+  .nav-menu {
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:52px;
+    right:0;
+    background: rgba(255,255,255,0.95);
+    width:200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius:8px;
+    padding:10px 0;
+    gap:0;
+    z-index:1000;
+  }
   .nav-menu.active { display:flex; }
-  .nav-menu a { padding:10px 20px; display:block; color:#fff; }
-  .menu-toggle { display:block; }
+  .nav-menu a { padding:10px 20px; display:block; color:#0f3d2e; }
+  .menu-toggle { display:flex; }
 }
 </style>
 </head>
@@ -192,17 +221,12 @@ ol li { margin-bottom:10px; font-size:15px; color:#333; }
 // Mobile menu toggle
 const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.nav-menu');
+toggle.addEventListener('click', () => { menu.classList.toggle('active'); });
+
+// Klik menu item -> scroll & tutup menu mobile
 const menuLinks = document.querySelectorAll('.nav-menu a');
-
-toggle.addEventListener('click', () => {
-  menu.classList.toggle('active');
-});
-
-// Klik menu item di mobile -> scroll & tutup menu
 menuLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    if(window.innerWidth <= 768) menu.classList.remove('active');
-  });
+  link.addEventListener('click', () => { if(window.innerWidth <= 768) menu.classList.remove('active'); });
 });
 
 // Klik di luar menu -> tutup menu
