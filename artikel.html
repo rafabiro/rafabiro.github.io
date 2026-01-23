@@ -1,139 +1,103 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Perpanjangan STNK Kendaraan – Panduan Lengkap & Persyaratan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Perpanjangan STNK Kendaraan – Panduan Lengkap & Persyaratan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #000;
-      line-height: 1.7;
-    }
+<style>
+/* Reset & Body */
+body { margin:0; font-family:Arial, Helvetica, sans-serif; background:#f4f6f8; color:#333; line-height:1.7; scroll-behavior:smooth; }
+.container { max-width:960px; margin:auto; padding:25px 20px 40px; background:#fff; }
 
-    
-header.main-header {
-  background: #0f3d2e;
+/* Header & Navbar */
+.header-rafabiro { background:#fff; border-bottom:1px solid #eee; }
+.header-inner { max-width:960px; margin:auto; padding:12px 20px; display:flex; align-items:center; justify-content:space-between; position:relative; }
+.logo { height:65px; }
+.nav-menu { display:flex; gap:20px; align-items:center; font-weight:600; font-size:15px; }
+.nav-menu a { text-decoration:none; color:#0f3d2e; padding:6px 10px; border-radius:6px; transition: all 0.3s ease; }
+.nav-menu a:hover { background:rgba(37,211,102,0.2); color:#25d366; }
+
+/* Toggle Mobile (Titik 3) */
+.menu-toggle {
+  display:none;
+  font-size:22px;
+  width:42px;
+  height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(37,211,102,0.9);
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition: all 0.3s ease;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+.menu-toggle:hover { background: rgba(37,211,102,1); transform: scale(1.05); }
+
+/* Content */
+h2, h3 { color:#0f3d2e; margin-top:30px; }
+p { margin-bottom:16px; }
+ul { padding-left:20px; }
+ul li { margin-bottom:10px; }
+.location img { width:100%; max-width:600px; border-radius:12px; margin:15px 0; }
+
+/* Button */
+.btn-group { margin-top:40px; display:flex; gap:15px; flex-wrap:wrap; }
+.btn { text-decoration:none; padding:14px 22px; border-radius:8px; background:#25d366; color:#fff; font-weight:bold; font-size:15px; transition:all 0.3s ease; }
+.btn:hover { background:#1ebe5d; }
+
+/* Floating WhatsApp */
+.floating-wa {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
   color: #fff;
+  padding: 12px 20px;
+  border-radius: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+  gap: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 9999;
 }
+.floating-wa img { width:40px; height:40px; }
 
-header.main-header img {
-  height: 42px;
+/* Footer */
+.footer { text-align:center; margin-top:50px; font-size:14px; color:#777; }
+
+/* Mobile Responsive */
+@media screen and (max-width:768px){
+  .nav-menu { display:none; flex-direction:column; position:absolute; top:52px; right:0; background: rgba(255,255,255,0.95); width:200px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border-radius:8px; padding:10px 0; gap:0; z-index:1000; }
+  .nav-menu.active { display:flex; }
+  .nav-menu a { padding:10px 20px; display:block; color:#0f3d2e; }
+  .menu-toggle { display:flex; }
 }
-
-header.main-header .menu {
-  font-size: 28px;
-  cursor: pointer;
-  color: #fff;
-}
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: #fff;
-      padding: 30px 20px 50px;
-    }
-
-    h2, h3 {
-      color: #000;
-      margin-top: 30px;
-    }
-
-    p {
-      margin-bottom: 16px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-
-    .location {
-      margin-top: 40px;
-    }
-
-    .location img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 12px;
-      margin: 15px 0;
-    }
-
-    .btn-group {
-      margin-top: 40px;
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      text-decoration: none;
-      padding: 14px 22px;
-      border-radius: 8px;
-      background: #0f3d2e;
-      color: #fff;
-      font-weight: bold;
-      font-size: 15px;
-    }
-
-    /* Floating WhatsApp */
-    .floating-wa {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background: #25d366;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      z-index: 9999;
-    }
-
-    .floating-wa img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 50px;
-      font-size: 14px;
-      color: #777;
-    }
-
-    a {
-      color: #0f3d2e;
-      text-decoration: none;
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-<header class="main-header">
-  <img src="logorafabiro.webp" alt="RafaBiro">
-  <div class="menu">☰</div>
+<header class="header-rafabiro">
+  <div class="header-inner">
+    <img src="logorafabiro.webp" alt="RafaBiro" class="logo">
+    <nav class="nav-menu">
+      <a href="index.html#hero">Home</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="index.html#layanan">Layanan</a>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </div>
 </header>
 
 <div class="container">
 
-  <!-- ISI KONTEN ARTIKEL (TIDAK DIUBAH) -->
   <h2>Perpanjangan STNK Kendaraan: Syarat, Ketentuan, dan Prosedur Resmi</h2>
-
   <p>
     Perpanjangan Surat Tanda Nomor Kendaraan (STNK) merupakan kewajiban bagi setiap pemilik kendaraan bermotor
     sebagaimana diatur dalam Undang-Undang Nomor 22 Tahun 2009 tentang Lalu Lintas dan Angkutan Jalan.
@@ -169,37 +133,47 @@ header.main-header .menu {
     dengan pengalaman lebih dari 13 tahun di bidang administrasi kendaraan.
   </p>
 
-  <!-- LOKASI -->
   <div class="location">
     <h3>Lokasi Kantor RafaBiro</h3>
-    <p>
-      Pondok Cipta - Griya Bintara Indah<br>
-      Blok AA 3 No.14 Bintara - Bekasi Barat<br>
-    </p>
-
+    <p>Pondok Cipta - Griya Bintara Indah<br>Blok AA 3 No.14 Bintara - Bekasi Barat</p>
     <img src="kantorfix.jpg" alt="Kantor RafaBiro Bekasi Barat">
-
-    <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank">
-      📍 Lihat lokasi di Google Maps
-    </a>
+    <a href="https://maps.app.goo.gl/6msFkMiojpRrA1Ri7" target="_blank">📍 Lihat lokasi di Google Maps</a>
   </div>
 
-  <!-- TOMBOL BAWAH -->
   <div class="btn-group">
     <a href="index.html" class="btn">⬅ Kembali ke Beranda</a>
+    <a href="index.html#layanan" class="btn">📋 Lihat Layanan</a>
   </div>
 
   <div class="footer">
     © RafaBiro – Biro Jasa Pajak Kendaraan | Bekasi Barat – Jabodetabek
   </div>
-
 </div>
 
-<!-- WHATSAPP FLOATING -->
 <a href="https://wa.me/6285714685247" class="floating-wa">
   <img src="wa.png" alt="WhatsApp">
   <span>Konsultasi via WhatsApp</span>
 </a>
+
+<script>
+// Mobile menu toggle
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.nav-menu');
+toggle.addEventListener('click', () => { menu.classList.toggle('active'); });
+
+// Klik menu item -> scroll & tutup menu mobile
+const menuLinks = document.querySelectorAll('.nav-menu a');
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => { if(window.innerWidth <= 768) menu.classList.remove('active'); });
+});
+
+// Klik di luar menu -> tutup menu
+document.addEventListener('click', function(e){
+  if(!e.target.closest('.menu-toggle') && !e.target.closest('.nav-menu')){
+    menu.classList.remove('active');
+  }
+});
+</script>
 
 </body>
 </html>
