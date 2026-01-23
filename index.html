@@ -77,7 +77,8 @@ ol li { margin-bottom:10px; font-size:15px; color:#333; }
 
 /* Mobile Responsive */
 @media screen and (max-width:768px){
-  .nav-menu { display:none; flex-direction:column; position:absolute; top:60px; right:0; background:rgba(37,211,102,0.95); width:200px; box-shadow:0 4px 12px rgba(0,0,0,0.15); border-radius:8px; padding:10px 0; gap:0; }
+  .nav-menu { display:none; flex-direction:column; position:absolute; top:60px; right:0; background:rgba(37,211,102,0.95); width:200px; box-shadow:0 4px 12px rgba(0,0,0,0.15); border-radius:8px; padding:10px 0; gap:0; z-index:1000; }
+  .nav-menu.active { display:flex; }
   .nav-menu a { padding:10px 20px; display:block; color:#fff; }
   .menu-toggle { display:block; }
 }
@@ -89,7 +90,7 @@ ol li { margin-bottom:10px; font-size:15px; color:#333; }
   <div class="header-inner">
     <img src="logorafabiro.webp" alt="RafaBiro" class="logo">
     <nav class="nav-menu">
-      <a href="index.html">Home</a>
+      <a href="#hero">Home</a>
       <a href="artikel.html">Artikel</a>
       <a href="#layanan">Layanan</a>
     </nav>
@@ -99,7 +100,7 @@ ol li { margin-bottom:10px; font-size:15px; color:#333; }
 
 <div class="container">
 
-  <div class="hero">
+  <div class="hero" id="hero">
     <img src="aan.jpg" alt="RafaBiro - Biro Jasa Pajak Kendaraan Bekasi Barat">
     <h2>Sudah Ribuan Dokumen Kami Bantu Bereskan</h2>
     <p>
@@ -191,12 +192,20 @@ ol li { margin-bottom:10px; font-size:15px; color:#333; }
 // Mobile menu toggle
 const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.nav-menu');
+const menuLinks = document.querySelectorAll('.nav-menu a');
 
 toggle.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
-// Klik di luar menu menutup mobile menu
+// Klik menu item di mobile -> scroll & tutup menu
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if(window.innerWidth <= 768) menu.classList.remove('active');
+  });
+});
+
+// Klik di luar menu -> tutup menu
 document.addEventListener('click', function(e){
   if(!e.target.closest('.menu-toggle') && !e.target.closest('.nav-menu')){
     menu.classList.remove('active');
