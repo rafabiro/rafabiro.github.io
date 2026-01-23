@@ -16,6 +16,102 @@
       color: #333;
       line-height: 1.6;
     }
+    <header class="header-rafabiro">
+  <div class="header-inner">
+    <img src="logorafabiro.webp" alt="RafaBiro" class="logo">
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </div>
+</header>
+
+<style>
+.header-rafabiro {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  height: 65px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #0f3d2e;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #25d366;
+}
+
+.menu-toggle {
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0f3d2e;
+  display: none; /* hidden di desktop */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #ffffff;
+    width: 200px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 12px 0;
+  }
+
+  .nav-menu a {
+    padding: 10px 20px;
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+}
+</style>
+
+<script>
+const toggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.nav-menu');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+</script>
     .container {
       max-width: 960px;
       margin: auto;
