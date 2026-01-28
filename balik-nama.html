@@ -97,6 +97,30 @@ ul li { margin-bottom:10px; }
   .nav-menu a { padding:10px 20px; }
   .menu-toggle { display:block; }
 }
+  .share-box{
+  margin-top:40px;
+  padding:20px;
+  border:1px dashed #d0e6db;
+  border-radius:10px;
+  background:#f9fffb;
+  text-align:center;
+}
+.share-btns{
+  margin-top:12px;
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.share-btns a{
+  padding:10px 18px;
+  border-radius:6px;
+  font-weight:bold;
+  text-decoration:none;
+  color:#fff;
+}
+#share-wa{background:#25d366;}
+#share-fb{background:#1877f2;}
 </style>
 </head>
 
@@ -170,6 +194,15 @@ Dengan pengalaman lebih dari 13 tahun,
 kami membantu proses secara legal, terpantau, dan tanpa ribet.
 </p>
 
+<!-- SHARE ARTIKEL -->
+<div class="share-box">
+  <p><strong>Bagikan artikel ini:</strong></p>
+  <div class="share-btns">
+    <a id="share-wa" target="_blank">📲 WhatsApp</a>
+    <a id="share-fb" target="_blank">📘 Facebook</a>
+  </div>
+</div>
+  
 <!-- ARTIKEL TERKAIT -->
 <div class="related">
   <h3>Artikel Terkait</h3>
@@ -209,5 +242,15 @@ toggle.addEventListener('click', () => {
 });
 </script>
 
+ <script>
+const url = encodeURIComponent(window.location.href);
+const title = encodeURIComponent(document.title);
+
+document.getElementById("share-wa").href =
+  "https://wa.me/?text=" + title + "%0A" + url;
+
+document.getElementById("share-fb").href =
+  "https://www.facebook.com/sharer/sharer.php?u=" + url;
+</script> 
 </body>
 </html>
