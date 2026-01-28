@@ -329,18 +329,12 @@
   </a>
 
   <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.nav-menu');
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
-const toggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.nav-menu');
-toggle.addEventListener('click', () => {
-  menu.classList.toggle('active');
-});
+const toggle=document.querySelector('.menu-toggle');
+const menu=document.querySelector('.nav-menu');
+toggle.onclick=()=>menu.classList.toggle('active');
+</script>
 
-/* SHARE SCRIPT */
+<script>
 const url = encodeURIComponent(window.location.href);
 const title = encodeURIComponent(document.title);
 
@@ -349,6 +343,6 @@ document.getElementById("share-wa").href =
 
 document.getElementById("share-fb").href =
   "https://www.facebook.com/sharer/sharer.php?u=" + url;
-</script>
+</script>  
 </body>
 </html>
